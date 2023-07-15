@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration form</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<script src="registrationValidation.js" defer></script>
+</head>
+
+<body>
+	<div class="split left">
+		<div class="centered">
+			<h1 class="header">We're glad you're here!</h1>
+			<h3 class="subheader">It's time for the science quiz. </h3>
+			<h3 class="subheader">______________</h3>
+			<p class="intro">Here you'll learn the basics of science. <br>
+				As soon as you join, you'll read a lesson and then take a short quiz to see how well you know this
+				topic.
+				In total, there are three lessons. You cannot skip lessons without completing them and taking the quiz. <br>
+				Let's getrted, we're excited!
+			</p>
+		</div>
+	</div>
+
+	<div class="split right">
+		<div class="wrapper">
+			<h1> Welcome To Our Registration Page </h1>
+			<br>
+			<p>Create Your Account Now </p>
+
+			<form name="signup" action='#' method="POST">
+				<span id="errorSignup"></span>
+				<span id="confirmSignup"></span>
+
+				<div class="input">
+					<!-- <label for="name" class="labels">Name :</label> -->
+					<input type="text" name="name" id="name" placeholder="Enter Your Name">
+					<div class="errors" id="name_error"><span>Please complete this field</span></div>
+				</div>
+
+				<div class="input">
+					<!-- <label for="email" class="labels">Email :</label> -->
+					<input type="text" name="email" id="email" placeholder="EnterYourEmail@hotmail.com">
+					<div class="errors" id="email_error"><span>Email address is invalid</span></div>
+					<div class="errors" id="empty_email"><span>Please complete this field</span></div>
+				</div>
+
+				<div class="input">
+					<!-- <label for="password" class="labels">Password :</label> -->
+					<input type="password" name="password" id="password" placeholder="Enter your password">
+					<div class="errors" id="password_error"><span>Please complete this field</span>
+					</div>
+				</div>
+
+				<div class="input">
+					<!-- <label for="confirm password" class="labels"> Confirm Password :</label> -->
+					<input type="password" name="confirm_password" id="confirm_password"
+						placeholder="Enter your password again">
+					<div class="errors" id="confirm_password_error"><span>Enter the same password
+							here</span>
+					</div>
+					<div class="errors" id="empty_confirm_password"><span>Please complete this
+							field</span>
+					</div>
+				</div>
+
+				<br>
+				<br>
+
+				<div class="button">
+					<button type="button" id="signup">Sign Up</button>
+				</div>
+				<br>
+				<br>
+				<div>
+					<a href="index.html">Go Back To Home Page </a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

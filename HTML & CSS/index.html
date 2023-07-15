@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Log In form</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<script src="loginValidation.js" defer></script>
+</head>
+
+<body>
+	<div class="split left">
+		<div class="centered">
+			<h1 class="header">We're glad you're here!</h1>
+			<h3 class="subheader">It's time for the science quiz. </h3>
+			<h3 class="subheader">______________</h3>
+			<p class="intro">Here you'll learn the basics of science. <br>
+				As soon as you join, you'll read a lesson and then take a short quiz to see how well you know this
+				topic.
+				In total, there are three lessons. You cannot skip lessons without completing them and taking the quiz.
+				<br>
+				Let's getrted, we're excited!
+			</p>
+		</div>
+	</div>
+	<div class="split right">
+		<div class="wrapper">
+			<h1>Welcome To Our Home Page</h1>
+			<br>
+			<p>Log In Into Your Account</p>
+
+			<form name="login" action='#' method="POST">
+				<span id="errorLogin"></span>
+
+				<div class="input">
+					<!-- <label for="email" class="labels">Email :</label> -->
+					<input type="text" name="email" id="email" placeholder="EnterYourEmail@hotmail.com">
+					<span class="errors" id="email_error">Email address is invalid</span>
+					<span class="errors" id="empty_email">Please complete this field</span>
+				</div>
+
+				<div class="input">
+					<!-- <label for="password" class="labels">Password :</label> -->
+					<input type="password" name="password" id="password" placeholder="Enter your password">
+					<span class="errors" id="password_error">Please complete this field</span>
+				</div>
+
+				<br>
+				<br>
+
+				<div class="button">
+					<button type="button" id="login">Log in</button>
+				</div>
+
+				<br>
+				<br>
+
+				<div>
+					<span>Not a member?</span>
+					<a href="Registration.html">Register Now </a>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
